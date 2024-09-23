@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {DirectoresView} from './components/directores/DirectoresView';
+import GenerosView from './components/generos/GenerosView';
+import MediaView from './components/media/MediaView';
+import ProductorasView from './components/productoras/ProductorasView';
+import TiposView from './components/tipos/TiposView';
+import Header from './components/ui/Header';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Hola mundo</h1>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
