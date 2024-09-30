@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Importa Link
+import { NavLink } from 'react-router-dom'; 
 
-const Header = () => {
+export const Header= () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">Peliculas</Link>
+        <NavLink className="navbar-brand" to="/">Peliculas</NavLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -20,29 +20,29 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link" activeClassName='active' to="/generos">
+              <NavLink className="nav-link" to="/generos">
                 Genero
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" activeClassName='active' to="/directores">
+              <NavLink className="nav-link" to="/directores">
                 Director
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" activeClassName='active' to="/productoras">
+              <NavLink className="nav-link" to="/productoras">
                 Productora
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" activeClassName='active' to="/tipos">
+              <NavLink className="nav-link" to="/tipos">
                 Tipo
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" activeClassName='active' to="/media">
+              <NavLink className="nav-link" to="/media">
                 Media
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -50,6 +50,4 @@ const Header = () => {
     </nav>
   );
 };
-
-export default Header;
 
